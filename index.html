@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<div id="container">
+<body>
+    <div>
+        <div class="typewriter-container" >
+            <div id="behind-letter" class="behind-letter"></div>
+            <img class="typewriter-top" src="./images/typewriter-top.png" id="typewriter-top">
+            <div id="letter" class="text">
+                <span class="inner-text" id="text"></span>
+            </div>
+            <img class="typewriter-bottom" src="./images/typewriter-bottom.png" alt="typewriter-bottom">
+            <img class="typewriter-bar" id="bar" src="./images/typewriter-bar.png" alt="typewriter-bar">
+          
+            <div class="enter-container" id="Enter" onclick="typeHit(this.id)"></div>
+            <div class="keyboard-container">
+                <div class="line-zero">
+                    <div class="small-button button" id="1" onclick="typeHit(this.id)"><span>1</span></div>
+                    <div class="small-button button" id="2" onclick="typeHit(this.id)">2</div>
+                    <div class="small-button button" id="3" onclick="typeHit(this.id)">3</div>
+                    <div class="small-button button" id="4" onclick="typeHit(this.id)">4</div>
+                    <div class="small-button button" id="5" onclick="typeHit(this.id)">5</div>
+                    <div class="small-button button" id="6" onclick="typeHit(this.id)">6</div>
+                    <div class="small-button button" id="7" onclick="typeHit(this.id)">7</div>
+                    <div class="small-button button" id="8" onclick="typeHit(this.id)">8</div>
+                    <div class="small-button button" id="9" onclick="typeHit(this.id)">9</div>
+                    <div class="small-button button" id="0" onclick="typeHit(this.id)">0</div>
+                </div>
+                <div class="parenthesis-button button" id="(" onclick="typeHit(this.id)">( )</div>
+                <div class="line-one">
+                    <div class="line-one-button button" id="q" onclick="typeHit(this.id)">Q</div>
+                    <div class="line-one-button button" id="w" onclick="typeHit(this.id)">W</div>
+                    <div class="line-one-button button" id="e" onclick="typeHit(this.id)">E</div>
+                    <div class="line-one-button button" id="r" onclick="typeHit(this.id)">R</div>
+                    <div class="line-one-button button" id="t" onclick="typeHit(this.id)">T</div>
+                    <div class="line-one-button button" id="y" onclick="typeHit(this.id)">Y</div>
+                    <div class="line-one-button button" id="u" onclick="typeHit(this.id)">U</div>
+                    <div class="line-one-button button" id="i" onclick="typeHit(this.id)">I</div>
+                    <div class="line-one-button button" id="o" onclick="typeHit(this.id)">O</div>
+                    <div class="line-one-button button" id="p" onclick="typeHit(this.id)">P</div>
+                    <div class="line-one-button button" id="-" onclick="typeHit(this.id)">- _</div>
+                </div>
+                <div class="line-two">
+                    <div class="button" id="a" onclick="typeHit(this.id)">A</div>
+                    <div class="button" id="s" onclick="typeHit(this.id)">S</div>
+                    <div class="button" id="d" onclick="typeHit(this.id)">D</div>
+                    <div class="button" id="f" onclick="typeHit(this.id)">F</div>
+                    <div class="button" id="g" onclick="typeHit(this.id)">G</div>
+                    <div class="button" id="h" onclick="typeHit(this.id)">H</div>
+                    <div class="button" id="j" onclick="typeHit(this.id)">J</div>
+                    <div class="button" id="k" onclick="typeHit(this.id)">K</div>
+                    <div class="button" id="l" onclick="typeHit(this.id)">L</div>
+                    <div class="button" id=";" onclick="typeHit(this.id)">; :</div>
+                    <div class="button" id="'" onclick="typeHit(this.id)">' "</div>
+                </div>
+                
+                <div class="line-three">
+                    <div class="button" id="z" onclick="typeHit(this.id)">Z</div>
+                    <div class="button" id="x" onclick="typeHit(this.id)">X</div>
+                    <div class="button" id="c" onclick="typeHit(this.id)">C</div>
+                    <div class="button" id="v" onclick="typeHit(this.id)">V</div>
+                    <div class="button" id="b" onclick="typeHit(this.id)">B</div>
+                    <div class="button" id="n" onclick="typeHit(this.id)">N</div>
+                    <div class="button" id="m" onclick="typeHit(this.id)">M</div>
+                    <div class="button" id="," onclick="typeHit(this.id)">,</div>
+                    <div class="button" id="." onclick="typeHit(this.id)">.</div>
+                    <div class="button" id="?" onclick="typeHit(this.id)">? /</div>
+                </div>
+                <button class="left-shift shift-button" id="shift" onclick="shift_pressed()">SHFT</button>
+                <button class="right-shift shift-button" onclick="shift_pressed()">SHFT</button>
+               
+                <div class="line-four">
+                    <div class="button space" id="Space" width="1000px" border-radius="100%" onclick="typeHit(this.id)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</div>
+</html>
